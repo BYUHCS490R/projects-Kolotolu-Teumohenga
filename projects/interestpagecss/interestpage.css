@@ -1,23 +1,59 @@
 body {
-    background-color: #abb3ff;
+    background-color: #f8f3d0;
 }
 body {
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body {
-    color: #0A2239;
+    color: #042649;
 }
 body {
     font-size: 13pt;
 }
 .temple {
-    color: #756150;
+    background-color: ;
+    color: #15507d;
+    font-weight: bold;
 }
 .link {
-    color: #573f2c;
+    color: #279af1;
     font-style: italic;
+}
+
+h1 {
+    background-color: #9d826c;
 }
 #interest {
     font-size: 24pt;
-    color: #69401f;
+    color: #f4e9e1;
+}
+#hero {
+    font-size: 24pt;
+    color: #f4e9e1;
+}
+
+h2 {
+    background-color: rgb(172, 171, 171);
+}
+dt {
+    background-color: rgb(172, 171, 171);
+    color: #061523;
+    font-weight: bold;
+}
+dd {
+    color: #15507d;
+    font-style: italic;
+}
+.info {
+    color: #5c6771;
+    font-style: italic;
+}
+.important {
+    color: #2061a2;
+    font-size: large;
+}
+#listo {
+    font-size: 24pt;
+    background-color: #9d826c;
+    color: #f4e9e1;
 }
