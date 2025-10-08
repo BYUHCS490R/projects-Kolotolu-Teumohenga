@@ -1,0 +1,9 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+nav a {
+    color: darkred;
+}
+.current {
+    color: black;
+}
