@@ -1,9 +1,37 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(treebg.jpg);
+    color: rgb(78, 57, 3);
+    background-color: bisque;
 }
 nav a {
-    color: darkred;
+    color: rgb(152, 58, 32);
 }
 .current {
     color: black;
+}
+.mylist {
+    list-style-image: url(star.jpg);
+}
+header {
+    background: url(boots.jpg) no-repeat bottom right;
+}
+main ul{
+    font-size: 14pt;
+    font-weight: bold;
+    color: rgb(54, 51, 51);
+}
+footer {
+    color: black;
+}
+main p{
+    color: black;
+    font-size: larger;
+}
+header h1 {
+    color: rgba(141, 3, 31, 0.885);
+}
+main h3 {
+    font-size: 18pt;
+    color: rgb(152, 63, 16);
 }
