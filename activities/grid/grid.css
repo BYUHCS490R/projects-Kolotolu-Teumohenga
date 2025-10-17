@@ -12,3 +12,26 @@ body {
     background-color: cornflowerblue;
     /* "margin: 10px;" will shrink the children */
 }
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+        "top top top"
+        "lside middle rside"
+        "bottom bottom btomm"
+    ;
+}
+header {
+    grid-area: top;
+}
+
+nav {
+    grid-area: lside;
+}
+
+main {
+    grid-area: middle;
+}
+
+footer {
+    grid-area: bottom;
+}
