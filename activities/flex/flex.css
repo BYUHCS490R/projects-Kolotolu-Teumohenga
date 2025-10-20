@@ -16,3 +16,21 @@ body {
     flex-wrap: wrap;*/
     justify-content: space-evenly;
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: rgb(55, 136, 207);
+    color: rgb(243, 239, 233);
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgb(217, 221, 224);
+    color: rgb(58, 99, 189);
+    text-decoration: underline;
+}
