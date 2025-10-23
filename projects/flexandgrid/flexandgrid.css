@@ -61,6 +61,7 @@ aside {
     grid-template-areas: 
     "1 2"
     ;
+    width: auto;
 }
 .dos {
     display: flex;
