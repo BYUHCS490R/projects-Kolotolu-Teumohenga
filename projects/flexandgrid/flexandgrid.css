@@ -58,9 +58,7 @@ aside {
 }
 .twocolumns {
     display: grid;
-    grid-template-areas: 
-    "1 2"
-    ;
+    grid-template-columns: 1fr 5fr;
     width: auto;
 }
 .dos {
