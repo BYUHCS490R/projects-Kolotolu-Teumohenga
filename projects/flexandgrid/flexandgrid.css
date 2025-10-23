@@ -8,6 +8,7 @@ header {
     color: azure;
     padding: 2px;
     margin-bottom: 2px;
+    width: auto;
 }
 nav {
     display: flex;
@@ -40,6 +41,7 @@ nav a:hover {
     background-color: darkolivegreen;
     color: azure;
     text-decoration: none;
+    width: auto;
 }
 .bottom a:hover {
     padding: 5px;
