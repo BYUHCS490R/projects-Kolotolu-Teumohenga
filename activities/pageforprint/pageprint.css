@@ -69,3 +69,24 @@ nav {
     background-color: rgb(238, 208, 55)
 }
 
+@media ONLY screen AND (max-width: 500px) {
+    body {
+        background-color: rgb(235, 215, 180);
+    }
+    nav {
+        flex-direction: column;
+    }
+    .mainrow {
+        flex-direction: column-reverse;
+    }
+    .card {
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .main-card {
+        order: -1;
+    }
+    }
+}
