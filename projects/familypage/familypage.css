@@ -46,7 +46,7 @@ nav a:hover {
     display: block;
     background-color: white;
     color: rgb(137, 179, 255);
-    text-decoration: none;
+    text-decoration: underline;
     border-radius: 4px;
 }
 
