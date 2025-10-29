@@ -1,21 +1,36 @@
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     background-color: rgb(190, 209, 245) ;
+    margin: 0;
 }
 
 header h1 {
     text-align: center;
+    background-color: rgb(148, 183, 250);
+    padding: 10px;
     margin: 0;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    margin: 5px;
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
     background-color: rgb(137, 179, 255);
     border-radius: 5px;
+    padding: 5px;
+    border-bottom: solid 10px rgb(188, 211, 254);
+    border-top: solid 10px rgb(188, 211, 254)
+    
 }
 
 nav a {
@@ -23,6 +38,8 @@ nav a {
     background-color: rgb(137, 179, 255);
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav a:hover {
@@ -33,24 +50,38 @@ nav a:hover {
     border-radius: 4px;
 }
 
-.sidebar {
-    background-color: rgb(190, 209, 245);
+main {
     margin: 0;
 }
 
+.sidebar {
+    background-color: rgb(190, 209, 245);
+    margin: 0;
+    width: 20%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .mainrow {
-    display: flex; 
+    display: flex;
+    width: 100%; 
+    margin: 0;
+}
+
+ul {
+    margin: 0;
 }
 
 .tres {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .card {
     background-color: rgb(159, 160, 161);
     margin: 5px;
-    box-shadow: 4px 3px 3px rgba(33, 31, 31, 0.8)
+    box-shadow: 4px 3px 3px rgba(33, 31, 31, 0.8);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .card img {
@@ -58,12 +89,23 @@ nav a:hover {
     
 }
 
+figure {
+    margin: 0;
+}
+
 figure img {
     width: 100%;
 }
 
+footer {
+    margin: 0;
+}
+
 @media ONLY print {
     nav {
+        display: none;
+    }
+    footer {
         display: none;
     }
 }
