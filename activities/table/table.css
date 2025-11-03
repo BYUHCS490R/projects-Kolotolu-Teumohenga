@@ -1,0 +1,32 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.schedule {
+    caption-side: bottom;
+    border-spacing: 0;
+    border-top: thin solid black;
+}
+
+.schedule thead tr {
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+
+.schedule tbody td{
+    border-bottom: thin solid black;
+}
+
+.schedule tbody tr :nth-child(odd) {
+    background-color: grey;
+}
+
+
+.schedule tfoot tr {
+    background-color: blue;
+    color: rgb(255, 255, 255);
+}
+
+.num {
+    vertical-align: top;
+}

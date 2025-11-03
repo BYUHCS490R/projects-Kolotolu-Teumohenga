@@ -14,7 +14,10 @@
         <h1>
             Tables
         </h1>
-        <table border="1">
+        <table class="schedule">
+            <caption>
+                My class Schedule
+            </caption>
             <thead>
                 <tr>
                     <th>Department</th>
@@ -29,9 +32,9 @@
                 </tr>  
             </thead>
             <tbody>
-                <tr>
+                <tr class="grayish">
                     <td>CS</td>
-                    <td rowspan="2">140</td>
+                    <td rowspan="2" class="num">140</td>
                     <td>Web Design</td>
                     <td>11am MWF</td>
                     <td>P3</td>
@@ -44,7 +47,7 @@
                     <td>P3</td>
                     <td>3</td>
                 </tr>
-                <tr>
+                <tr class="grayish">
                     <td>PAIS</td>
                     <td>250</td>
                     <td>Polynesian Dance Class</td>
@@ -60,7 +63,7 @@
                     <td>Mckay 179</td>
                     <td>4</td>
                 </tr>
-                <tr>
+                <tr class="grayish">
                     <td>Art</td>
                     <td>130</td>
                     <td>Seasider Choir</td>
@@ -86,6 +89,10 @@
         <p>You will not use a table when you are laying elements out on your page. It'll make make things tedious.</p>
         <h2>When do you need to do extra work for table accessibility?</h2>
         <p>You will need to do extra work for table accessility if you work for a company that can get sued for their website not being accessible to individuals with disabilities.</p>
+        <h2>Why don't we use the border attribute?</h2>
+        <p>The border attribute has been taken out of html so it will create a validation error.</p>
+        <h2>What is the easiest way to color every other row a different color?</h2>
+        <p>The easiest way to color every other row a different color is by using the pseudo class "n-thchild."</p>
     </main>
     <footer>
         <p>&copy; 2025 Kolotolu Teumohenga</p>
