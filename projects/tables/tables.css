@@ -63,7 +63,8 @@ width: 80%;
     border-collapse: collapse;
     margin-right: auto;
     caption-side: bottom;
-    width: 70%;
+    width: auto;
+    margin-right: 5px;
 }
 
 .brownhb th {
