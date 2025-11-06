@@ -1,0 +1,90 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    text-align: center;
+    background-color: tan;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+
+
+nav a:hover {
+    display: block;
+    background-color: white;
+    padding-left: 40px ;
+    padding-right: 40px;
+    color: rgb(130, 98, 46);
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+nav a {
+    display: block;
+    background-color: rgb(130, 98, 46);
+    padding-left: 40px ;
+    padding-right: 40px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.mainrow {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar{
+    background-color: tan;
+    width: 20%;
+}
+
+.sidebar p {
+    text-align: center;
+}
+
+main {
+width: 80%;
+}
+
+.brownhb {
+    margin-top: 20px;
+    border: 3px solid black;
+    border-collapse: collapse;
+    margin-right: auto;
+    caption-side: bottom;
+}
+
+.brownhb th {
+    border: 3px solid black;
+    height: 30px;
+    background-color: rgb(185, 184, 184);
+}
+
+.brownhb td {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.thtitle {
+    color: rgb(130, 98, 46);
+}
+
+.brownhb tbody tr:nth-child(odd) {
+    background-color: rgb(130, 98, 46);
+    color: white;
+}
+
+.brownhb tbody tr:nth-child(even) {
+    color: rgb(130, 98, 46);
+}
