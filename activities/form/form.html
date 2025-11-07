@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Kolotolu's Web Design Site</h1>
+    </header>
+    <nav>
+        link link link
+    </nav>
+    <main>
+        <h1>Forms</h1>
+        <form action="formprocess.html" method="post">
+           <div>
+                <label for="fname">First Name</label>  
+                <input type="text" name="fname" id="fname" placeholder="first name">
+           </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" placeholder="last name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="your@email.com">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="pass" id="password">
+            </div>
+            <div>
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="blank">---</option>
+                    <option value="CA">California</option>
+                    <option value="AZ">
+                        Arizona
+                    </option>
+                    <option value="HI">Hawaii</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="agree">
+                    I agree to the terms.
+                </label>
+            </div>
+            <div>
+                Gender:
+                <label>
+                    <input type="radio" name="gender" value="male">Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female">Female
+                </label>
+            </div>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments">Questions, comments, concerns...</textarea>
+            </div>
+            <div>
+                <label for="submit"></label>
+                <input type="submit" value="Sign Up" id="submit">
+            </div>
+        </form>
+        <h2>
+            The form tag has an "action" attribute. What does it do?
+        </h2>
+        <p>The action attribute is the same as clicking a link. It directs you to another page.
+        </p>
+        <h2>
+            The form tag has a "method" attribute. What does it do?
+        </h2>
+        <p>
+            The method attribute determines how the information submitted by the user in the form will be used. It can be used in either “get” or “post”.
+        </p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Kolotolu Teumohenga</p>
+    </footer>
+</body>
+</html>
