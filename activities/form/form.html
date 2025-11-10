@@ -10,62 +10,68 @@
     <header>
         <h1>Kolotolu's Web Design Site</h1>
     </header>
-    <nav>
-        link link link
-    </nav>
     <main>
         <h1>Forms</h1>
         <form action="formprocess.html" method="post">
-           <div>
-                <label for="fname">First Name</label>  
-                <input type="text" name="fname" id="fname" placeholder="first name">
-           </div>
-            <div>
-                <label for="lname">Last Name</label>
-                <input type="text" name="lname" id="lname" placeholder="last name">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" value="your@email.com">
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" name="pass" id="password">
-            </div>
-            <div>
-                <label for="state">State</label>
-                <select name="state" id="state">
-                    <option value="blank">---</option>
-                    <option value="CA">California</option>
-                    <option value="AZ">
-                        Arizona
-                    </option>
-                    <option value="HI">Hawaii</option>
-                </select>
-            </div>
-            <div>
-                <label>
-                    <input type="checkbox" name="agree">
-                    I agree to the terms.
-                </label>
-            </div>
-            <div>
-                Gender:
-                <label>
-                    <input type="radio" name="gender" value="male">Male
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="female">Female
-                </label>
-            </div>
-            <div>
-                <label for="comments">Comments</label>
-                <textarea name="comments" id="comments">Questions, comments, concerns...</textarea>
-            </div>
-            <div>
-                <label for="submit"></label>
-                <input type="submit" value="Sign Up" id="submit">
-            </div>
+            <fieldset>
+                <legend>
+                    Sign up
+                </legend>
+                <div class="form-row">
+                        <label for="fname">First Name</label>  
+                        <input type="text" name="fname" id="fname" placeholder="first name">
+                </div>
+                    <div class="form-row">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname" placeholder="last name">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input type="password" name="pass" id="password">
+                    </div>
+                    <div class="form-row">
+                        <label for="state">State</label>
+                        <select name="state" id="state">
+                            <option value="blank">---</option>
+                            <option value="CA">California</option>
+                            <option value="AZ">
+                                Arizona
+                            </option>
+                            <option value="HI">Hawaii</option>
+                        </select>
+                    </div>
+                    <div class="check-row">
+                        <div class="spacer"></div>
+                        <label>
+                            <input type="checkbox" name="agree">
+                            I agree to the terms.
+                        </label>
+                    </div>
+                    <div class="check-row">
+                        <div class="spacer">
+                            Gender:
+                        </div>
+                        <label>
+                            <input type="radio" name="gender" value="male">Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female">Female
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" id="comments">Questions, comments, concerns...</textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="spacer">
+                        </div>
+                        <input type="submit" value="Sign Up" id="submit">
+                    </div>
+            </fieldset>
         </form>
         <h2>
             The form tag has an "action" attribute. What does it do?
@@ -86,6 +92,16 @@
             For login, you will want to use the “post” method. You will use “post” if you are trying to change, add, update, or delete something.
             You will use the “get” method if you just want to read something. “Get” is used when you click on links.
 
+        </p>
+        <h1> Questions for 11/10</h1>
+        <h2>What are different ways to style your form?</h2>
+        <p>
+            You can style your form using flex. You can also use margin or gap to space out your input boxes. You can use the effect of siblings to align the text boxes.
+        </p>
+        <h2>How does flex help for both Desktop and Mobile phones?
+        </h2>
+        <p>
+            Flex makes it easier to adjust your website for mobile phones because you will only need to change a few things, such as the flex-direction and width sizes.
         </p>
     </main>
     <footer>

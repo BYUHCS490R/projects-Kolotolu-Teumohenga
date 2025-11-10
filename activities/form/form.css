@@ -2,3 +2,74 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+fieldset {
+    background-color: rgb(167, 188, 227);
+    margin: auto;
+    width: 80%;
+}
+
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.form-row input:not([type='submit']), .form-row select, .form-row textarea {
+    padding: 5px 10px;
+    background-color: rgb(214, 233, 234);
+}
+
+.form-row input:not([type='submit']):focus, .form-row select:focus, .form-row textarea:focus {
+    background-color: white;
+}
+
+.form-row input[type='submit'] {
+    background-color: rgb(146, 146, 214);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+}
+
+legend {
+    background-color: rgb(51, 113, 227);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 4px 3px 3px rgba(65, 64, 64, 0.8)
+}
+
+@media ONLY screen AND (max-width: 480px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    fieldset {
+        width: 95%;
+    }
+
+    .form-row label, .spacer {
+        text-align: left;
+    }
+    
+    legend {
+        font-size: 20px;
+    }
+}
