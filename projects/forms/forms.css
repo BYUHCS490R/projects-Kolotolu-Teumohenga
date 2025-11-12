@@ -1,0 +1,100 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    background-color: rgb(229, 229, 244);
+}
+
+header {
+    text-align: center;
+}
+
+fieldset {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.diff {
+    background-color: rgb(210, 176, 243);
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+fieldset {
+    background-color: rgb(191, 191, 222);
+    width: 80%;
+}
+
+.align, .joinalign {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0;
+}
+
+.align label {
+    width: 37%;
+    text-align: right;
+    font-weight: bold;
+}
+
+.spacer {
+    width: 37%;
+    text-align: right;
+    font-weight: bold;
+}
+
+.align input[type='submit'] {
+    background-color: rgb(114, 159, 242);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.align input:not([type='submit']), .align select, .align textarea {
+    background-color: rgb(219, 220, 220);
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.align input:not([type='submit']):focus, .align select:focus, .align textarea:focus {
+    background-color: white
+}
+
+legend {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(68, 76, 200);
+    color: white;
+    border-radius: 3px;
+    padding: 3px;
+    box-shadow: 3px 2px 2px rgba(86, 86, 86, 0.7);
+}
+
+@media ONLY screen AND (max-width: 480px) {
+    .align, .joinalign {
+        flex-direction: column;
+    }
+
+    fieldset {
+        width: 95%;
+    }
+
+    .align label, .spacer {
+        text-align: left;
+    }
+
+    .joinalign {
+
+    }
+
+    legend {
+        font-size: 25px;
+    }
+
+}

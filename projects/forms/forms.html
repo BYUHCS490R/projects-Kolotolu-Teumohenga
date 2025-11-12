@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <div class="diff">
+        <header>
+            <h1>Forms</h1>
+        </header>
+    </div>
+    <main>
+        <form action="formsprocess.html">
+            <fieldset>
+                <legend>
+                    Sign Up
+                </legend>
+                <div class="align">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" placeholder="first name">
+                </div>
+                <div class="align">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="last name">
+                </div>
+                <div class="align">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="align">
+                    <label for="password">Password</label>
+                    <input type="password" name="pass" id="password">
+                </div>
+                <div class="align">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="blank" style="text-align: center;">-----</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="None">Prefer not to say</option>
+                    </select>
+                </div>
+                <div class="align">
+                    <label for="birthday">Birthday</label>
+                    <input type="date" name="birthday" id="birthday">
+                </div>
+                <div class="joinalign">
+                    <div class="spacer">
+                        Which plan would you like to subscribe to?
+                    </div>
+                    <label>
+                        <input type="radio" name="choice" value="premium">Premium
+                    </label>
+                    <label>
+                        <input type="radio" name="choice" value="standard"> Standard
+                    </label>
+                    <label>
+                        <input type="radio" name="choice" value="none"> None
+                    </label>
+                </div>
+                <div class="joinalign">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="agree">I agree to the terms
+                    </label>
+                </div>
+                <div class="align">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments" >Questions, comments, concerns...</textarea>
+                </div>
+                <div class="align">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Join Now" id="submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <div class="diff">
+        <footer>
+            <p>&copy; 2025 Kolotolu Teumohenga</p>
+        </footer>
+    </div>
+</body>
+</html>
