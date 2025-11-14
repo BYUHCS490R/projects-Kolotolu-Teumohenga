@@ -29,6 +29,10 @@
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email">
                     </div>
+                     <div class="form-row">
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age">
+                    </div>
                     <div class="form-row">
                         <label for="password">Password</label>
                         <input type="password" name="pass" id="password">
@@ -127,7 +131,34 @@
     </footer>
     <script>
         document.getElementById('myForm').addEventListener('submit', function(event) {event.preventDefault();
-            alert("Form Submitted");
+        
+        const fname = document.getElementById('fname').value;
+        const lname = document.getElementById('lname').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const age = document.getElementById('age').value;
+
+        if (!fname || !lname || !email) {alert("You need a name and email");
+            return;
+        }
+
+        if (!password) {alert("You need a password");
+            return;
+        }
+        
+        if (!age || age <18) {alert("You need to at least be 18");
+            return;
+        }
+
+        const formData = {
+            name: fname + lname, 
+            email: email,
+            password: password,
+            age: age
+        };
+        
+        alert("Form Submitted");
+        console.log(formData);
         })
     </script>
 </body>
