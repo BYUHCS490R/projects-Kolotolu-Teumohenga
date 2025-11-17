@@ -11,6 +11,7 @@
         <h1>Kolotolu's Web Design Site</h1>
     </header>
     <main>
+        <div id="message"></div>
         <h1>Forms</h1>
         <form action="formprocess.html" method="post" id="myForm">
             <fieldset>
@@ -125,41 +126,21 @@
         </h2>
         <p>The most popular front-end JS library today is called React or React Native. One other may include Electrum, 
         </p>
+        <h1>11/17/2025</h1>
+        <h2>
+            What is AJAX?
+        </h2>
+        <p>AJAX allows the web page communicate with the server without reloading the page.</p>
+        <h2>
+            Why do you put your JS Code in a separate file?
+        </h2>
+        <p>
+            You put your JS Code in a seperate file to allow for better readability of your code. It also enables you to use the JavaScript file across multiple webpages.
+        </p>
     </main>
     <footer>
         <p>&copy; 2025 Kolotolu Teumohenga</p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit', function(event) {event.preventDefault();
-        
-        const fname = document.getElementById('fname').value;
-        const lname = document.getElementById('lname').value;
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        const age = document.getElementById('age').value;
-
-        if (!fname || !lname || !email) {alert("You need a name and email");
-            return;
-        }
-
-        if (!password) {alert("You need a password");
-            return;
-        }
-        
-        if (!age || age <18) {alert("You need to at least be 18");
-            return;
-        }
-
-        const formData = {
-            name: fname + lname, 
-            email: email,
-            password: password,
-            age: age
-        };
-        
-        alert("Form Submitted");
-        console.log(formData);
-        })
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>
