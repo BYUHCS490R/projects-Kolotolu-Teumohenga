@@ -4,6 +4,7 @@ document.getElementById('signup').addEventListener('submit', function(event) {ev
         const lname = document.getElementById('lname').value;
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
+        const age = document.getElementById('age').value;
         const passlen = password.length
 
         if (!fname || !lname || !email) {alert("You need a name and email");
@@ -15,6 +16,10 @@ document.getElementById('signup').addEventListener('submit', function(event) {ev
         }
         
         if (passlen < 6) {alert("Your password needs to be at least 6 characters long");
+            return;
+        }
+
+         if (!age || age <18) {alert("You need to at least be 18");
             return;
         }
 
