@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Request A Free Estimate Today!
+        </h1>
+    </header>
+    <nav>
+        <a href="final.html">Home</a>
+        <a href="driveway.html" >Driveways/Sidewalks</a>
+        <a href="foundation.html">Foundation</a>
+        <a href="estimate.html" class="current" >Estimate</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="location.html">Locations</a>
+    </nav>
+    <main>
+        <div id="estimate"></div>
+            <form action="formprocess.html" method="post" id="signup">
+                <fieldset>
+                    <legend>Fill This Form</legend>
+                    <div class="align">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname" placeholder="first name">
+                    </div>
+                    <div class="align">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname" placeholder="last name">
+                    </div>
+                    <div class="align">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="align">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                    <div class="align">
+                        <label for="serviceselection">Service Selection</label>
+                        <select name="serviceselection" id="serviceselection">
+                            <option value="blank">---</option>
+                            <option value="Driveway">Driveway</option>
+                            <option value="Sidewalk">Sidewalk</option>
+                            <option value="Foundation">Foundation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="align">
+                        <label for="comment">Other</label>
+                        <textarea name="comment" id="comment">Please provide a short description of the service you would like provided.</textarea>
+                    </div>
+                    <div class="alsoalign">
+                        <div class="spacer"></div>
+                        <label>
+                            <input type="checkbox" name="agree">I agree to be contacted to set up my estimate
+                        </label>
+                    </div>
+                    <div class="align">
+                        <div class="spacer"></div>
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+                </fieldset>
+            </form>
+    </main>
+    <footer>
+        &copy; 2025 Kolotolu Teumohenga
+    </footer>
+    <script src="estimate.js"></script>
+</body>
+</html>
