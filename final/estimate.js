@@ -5,12 +5,18 @@ document.getElementById('signup').addEventListener('submit', function(event) {ev
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     const numlen = phone.length
+    const check = document.getElementById('agree');
+
 
     if (!fname || !lname || !email) {alert ("You need a name and email");
         return;
     }
 
     if (numlen < 10) {alert("Phone Number invalid. Please put a phone number at least 10 characters long.");
+        return;
+    }
+
+    if (!check.checked) {alert ("You need to agree in order to submit the form.");
         return;
     }
 
