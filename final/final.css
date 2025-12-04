@@ -65,6 +65,15 @@ nav a:hover {
     border-right: thin solid black;
     padding: 0;
     margin-right: 0;
+    background-color: rgb(114, 81, 39);
+    border-radius: 0 0 5px 0;
+    margin-bottom: 10px;
+}
+
+.sidebar figcaption {
+    background-color: rgb(160, 138, 104);
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
 .sidebar h2 {
@@ -73,7 +82,9 @@ nav a:hover {
     background-color: rgb(77, 49, 12);
     color: white;
     margin-top: 0;
-    padding: 10px;margin-right: 0;
+    padding: 10px;
+    margin-right: 0;
+    padding-bottom: 26px;
 }
 
 .sidebartwo {
@@ -203,6 +214,7 @@ legend {
 
 caption {
     font-weight: bold;
+    font-size: 16px;
 }
 
 .center {
@@ -221,6 +233,20 @@ caption {
         margin-right: 0;
         margin-top: 0;
         margin-left: 0;
+    }
+
+    .headingtwo {
+    display: block;
+        background-color: rgb(114, 81, 39);
+        margin-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0;
+        margin-left: 0;
+        border-radius: 0 0 0 5px;
     }
 
 .dos
@@ -336,7 +362,7 @@ footer {
     padding: 30px 0;
     background-color: rgb(77, 49, 12);
     color: white;
-    margin-top: 10px;
+    
     width: 100%;
 }
 
@@ -381,7 +407,6 @@ caption {
     
     .home img {
     width: 80%;
-
     }
 
     .space {
@@ -522,5 +547,7 @@ caption {
         color: white;
     }
 
-
+    .sidebar {
+        border-radius: 0;
+    }
 }
