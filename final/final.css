@@ -345,6 +345,13 @@ caption {
     font-size: 13px;
 }
 
+.cuatro {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
 .image {
     display: block;
     margin-left: auto;
@@ -495,6 +502,13 @@ caption {
     }
 
     .tres {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .cuatro {
         display: flex;
         flex-direction: column;
         width: 100%;
