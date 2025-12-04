@@ -14,6 +14,7 @@ header {
     margin: 10px 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 1px;
+    margin-bottom: 0;
 }
 
 nav {
@@ -23,6 +24,8 @@ nav {
     font-weight: bold;
     margin: 10px 0;
     width: 100%;
+    font-size: 15px;
+    margin-bottom 0;
 }
 
 nav a {
@@ -31,8 +34,9 @@ nav a {
     color: black;
     padding: 3px 0;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 3px;;
 }
+
 
 nav a:hover {
     background-color: rgb(77, 49, 12);
@@ -50,19 +54,47 @@ nav a:hover {
     display: flex;
 }
 
+.mainrowtwo {
+    display: flex;
+}
+
 .sidebar {
-    width: 25%;
+    width: 35%;
     margin: 0px 20px 0px 0px;
+    font-size: 14px;
+}
+
+.sidebartwo {
+    width: 30%;
+    margin: 0px 20px 0px 0px;
+    font-size: 12px;
+    border-right: thin solid black;
+    padding: 2px 0;
+
+}
+
+.sidebartwo h2 {
+    display: block;
+    text-align: center;
+    background-color: rgb(77, 49, 12);
+    color: white;
+    margin-top: 0;
+    padding: 10px;
 }
 
 .content {
     width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .stats {
     caption-side: bottom;
     border-spacing: 0;
     border: thin solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
 .stats thead th{
@@ -76,10 +108,9 @@ nav a:hover {
     border: thin solid black
 }
 
-
-
 .stats tbody td{
     border: thin solid black;
+    font-size: 11px;
 }
 
 fieldset {
@@ -135,6 +166,141 @@ legend {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+caption {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.heading {
+        background-color: rgb(114, 81, 39);
+        margin-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+    }
+
+.dos
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tres
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-bottom: 2px solid black;
+}
+
+.cardthree img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-bottom: 2px solid black;
+}
+
+.card h2 {
+    display: block;
+    text-align: center;
+    background-color: rgb(114, 81, 39);
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.cardthree h2 {
+    display: block;
+    text-align: center;
+    background-color: rgb(114, 81, 39);
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.jobtitle {
+    display: block;
+    text-align: center;
+    background-color: rgb(62, 49, 32);
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.card {
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(35, 34, 34, 0.8);
+}
+
+.cardthree {
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(35, 34, 34, 0.8);
+    width: ;
+}
+
+
+.cardtwo {
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(35, 34, 34, 0.8);
+    width: 30%;
+    margin: auto;
+    font-size: 13px;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.jobtitle {
+    text-align: center;
+}
+
+li a {
+    color: rgb(77, 49, 12);
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer {
+    padding: 30px 0;
+    background-color: rgb(77, 49, 12);
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+}
+
+iframe {
+    margin-top: 15px;
+}
+
 @media ONLY screen AND (max-width: 480px) {
     body {
         width: 100%;
@@ -145,7 +311,8 @@ legend {
         flex-direction: column;
         justify-content: center;
         margin-top: 0;
-        font-size: x-large;
+        font-size: 23px;
+        margin-bottom: ;
     }
     
     .align, .alsoalign {
@@ -157,11 +324,28 @@ legend {
         text-align: center;
     }
 
+     .mainrowtwo {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
     .sidebar {
         width: 100%;
+        font-size: large;
+    }
+
+     .sidebartwo {
+        width: 100%;
+        font-size: large;
     }
 
     .content {
+        width: 100%;
+        font-size: large;
+    }
+
+    .stats {
+        font-size: small;
         width: 100%;
     }
 
@@ -192,6 +376,56 @@ legend {
         padding: 5px;
     }
 
+    .image {
+        width: 100%;
+    }
+
+    .dos {
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8)
+    }
+
+    .tres {
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 80%;
+        border: thick solid black;
+        box-shadow: 3px 3px 4px rgba(33, 31, 31, 0.8);
+        border-radius: 5px;
+    }
+
+    .card {
+        border: none;
+        box-shadow: none;
+        margin-bottom: 10px;
+    }
+
+    .card img {
+        display: block;
+        margin: auto;
+        border: none;
+        box-shadow: none;
+        width: 85%;
+    }
+
+    .card h2 {
+        diplay: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        padding: 10px 0;
+        margin-top: 0;
+    }   
+
+    .heading {
+        background-color: rgb(114, 81, 39);
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+    }
 
 
 }
