@@ -64,7 +64,7 @@ nav a:hover {
     font-size: 12px;
     border-right: thin solid black;
     padding: 0;
-    margin-right: 5px;
+    margin-right: 0;
 }
 
 .sidebar h2 {
@@ -96,7 +96,7 @@ nav a:hover {
 
 .content {
     display: block;
-    width: 60%;
+    width: auto;
     margin-left: 0;
     margin-right: 0;
 }
@@ -108,12 +108,16 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px rgba(53, 48, 48, 0.8);
+    width: 100%;
 }
 
 .stats thead th{
     background-color: rgb(114, 81, 39);
     color: white;
     border: thin solid black;
+    padding: 10px 5px;
 }
     
 
@@ -124,6 +128,7 @@ nav a:hover {
 .stats tbody td{
     border: thin solid black;
     font-size: 11px;
+    padding: 10px 5px;
 }
 
 fieldset {
@@ -158,9 +163,6 @@ legend {
     margin: 12px;
 }
 
-.heading {
-    margin-top: 0;
-}
 
 .align label {
     width: 37%;
@@ -197,11 +199,16 @@ caption {
 }
 
 .heading {
+    display: block;
         background-color: rgb(114, 81, 39);
         margin-bottom: 5px;
         padding-top: 10px;
         padding-bottom: 10px;
         color: white;
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0;
+        margin-left: 0;
     }
 
 .dos
@@ -210,6 +217,7 @@ caption {
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 10px;
+    margin-left: 0;
 }
 
 .tres
@@ -225,6 +233,7 @@ caption {
     width: 100%;
     margin: 0;
     border-bottom: 2px solid black;
+    margin-left: 0;
 }
 
 .cardthree img {
@@ -267,6 +276,7 @@ caption {
 .card {
     border: 3px solid black;
     border-radius: 5px;
+    margin-left: 0;
     box-shadow: 2px 2px 4px rgba(35, 34, 34, 0.8);
 }
 
@@ -325,8 +335,16 @@ iframe {
 .home img {
     border: 2px solid black;
     border-radius: 5px;
-    box-shadow: 2px 2px 3px rgba(58, 41, 41, 0.8)
+    box-shadow: 2px 2px 3px rgba(58, 41, 41, 0.8);
 }
+
+.hometwo img {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(58, 41, 41, 0.8);
+    width: 100%;
+}
+
 
 @media ONLY screen AND (max-width: 480px) {
     body {
@@ -356,7 +374,7 @@ iframe {
     }
 
     .mainrow {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
     }
 
