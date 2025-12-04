@@ -61,7 +61,19 @@ nav a:hover {
 .sidebar {
     width: 35%;
     margin: 0px 20px 0px 0px;
-    font-size: 14px;
+    font-size: 12px;
+    border-right: thin solid black;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.sidebar h2 {
+    display: block;
+    text-align: center;
+    background-color: rgb(77, 49, 12);
+    color: white;
+    margin-top: 0;
+    padding: 10px;margin-right: 0;
 }
 
 .sidebartwo {
@@ -69,7 +81,7 @@ nav a:hover {
     margin: 0px 20px 0px 0px;
     font-size: 12px;
     border-right: thin solid black;
-    padding: 2px 0;
+    padding: 0;
 
 }
 
@@ -83,9 +95,10 @@ nav a:hover {
 }
 
 .content {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    width: 60%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .stats {
@@ -135,10 +148,18 @@ legend {
     border-radius: 5px;
 }
 
+.space {
+    margin-top: 10px;
+    }
+
 .align {
     display: flex;
     gap: 10px;
     margin: 12px;
+}
+
+.heading {
+    margin-top: 0;
 }
 
 .align label {
@@ -172,6 +193,7 @@ caption {
 
 .center {
     text-align: center;
+    margin-top: 0;
 }
 
 .heading {
@@ -300,6 +322,12 @@ iframe {
     margin-top: 15px;
 }
 
+.home img {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(58, 41, 41, 0.8)
+}
+
 @media ONLY screen AND (max-width: 480px) {
     body {
         width: 100%;
@@ -314,6 +342,15 @@ iframe {
         margin-bottom: 0;
     }
     
+    .home img {
+    width: 80%;
+
+    }
+
+    .space {
+    margin-top: 10px;
+    }
+
     .align, .alsoalign {
         flex-direction: column;
     }
